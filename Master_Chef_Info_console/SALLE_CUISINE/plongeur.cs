@@ -1,6 +1,6 @@
 using System;
 
-namespace SALLE_CUISINE {
+namespace Master_Chef_Info_console.SALLE_CUISINE {
 	public class Plongeur {
 		public void Faire_vaisselle() {
 			throw new System.NotImplementedException("Not implemented");

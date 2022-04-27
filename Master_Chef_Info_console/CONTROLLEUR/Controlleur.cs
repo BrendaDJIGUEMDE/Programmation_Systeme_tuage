@@ -1,6 +1,6 @@
 using System;
 
-namespace CONTROLLEUR {
+namespace Master_Chef_Info_console.CONTROLLEUR {
 	public class Controlleur {
 		private String salle_Restauration;
 		private String cuisine;

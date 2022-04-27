@@ -1,6 +1,6 @@
 using System;
 
-namespace SALLE_RESTAURATION.MODEL {
+namespace Master_Chef_Info_console.SALLE_RESTAURATION.MODEL {
 	public class Salle_Restauration {
 		private String carres;
 		private String maitre_Hotel;

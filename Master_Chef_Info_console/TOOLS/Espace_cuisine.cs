@@ -1,6 +1,6 @@
 using System;
 
-namespace TOOLS {
+namespace Master_Chef_Info_console.TOOLS {
 	public class Espace_cuisine {
 		private String produits;
 		private String espace_stokage;

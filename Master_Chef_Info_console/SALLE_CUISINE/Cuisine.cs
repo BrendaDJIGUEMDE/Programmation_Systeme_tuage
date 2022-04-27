@@ -1,6 +1,7 @@
 using System;
 
-namespace SALLE_CUISINE {
+namespace Master_Chef_Info_console.SALLE_CUISINE
+{
 	public class Cuisine {
 		private String plongeur;
 		private String cuisinier;

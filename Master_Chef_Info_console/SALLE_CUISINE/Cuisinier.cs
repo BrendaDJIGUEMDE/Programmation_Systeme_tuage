@@ -1,6 +1,6 @@
 using System;
 
-namespace SALLE_CUISINE {
+namespace Master_Chef_Info_console.SALLE_CUISINE {
 	public class Cuisinier {
 		public void Responsable_commis() {
 			throw new System.NotImplementedException("Not implemented");

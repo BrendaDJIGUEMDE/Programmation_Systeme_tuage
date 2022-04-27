@@ -1,6 +1,6 @@
 using System;
 
-namespace SALLE_CUISINE {
+namespace Master_Chef_Info_console.SALLE_CUISINE {
 	public class Chef_cuisine {
 		public void Supervise() {
 			throw new System.NotImplementedException("Not implemented");

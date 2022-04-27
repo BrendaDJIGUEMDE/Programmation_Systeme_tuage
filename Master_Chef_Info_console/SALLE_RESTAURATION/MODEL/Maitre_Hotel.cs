@@ -1,6 +1,6 @@
 using System;
 
-namespace SALLE_RESTAURATION.MODEL {
+namespace Master_Chef_Info_console.SALLE_RESTAURATION.MODEL {
 	public class Maitre_Hotel {
 		public void Attribute_place() {
 			throw new System.NotImplementedException("Not implemented");

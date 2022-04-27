@@ -1,12 +1,13 @@
 using System;
 
-namespace VUE {
+namespace Master_Chef_Info_console.VUE {
 	public class Interface {
-		public void Input() {
-			throw new System.NotImplementedException("Not implemented");
+		public int Input( int nb_client, bool reserv) {
+			return nb_client;
 		}
-		public void Output() {
-			throw new System.NotImplementedException("Not implemented");
+		public void Output(string mess) {
+			//mess = out_mess;
+			Console.Writeline(mess)
 		}
 
 		private global::CONTROLLEUR.Controlleur controlleur;

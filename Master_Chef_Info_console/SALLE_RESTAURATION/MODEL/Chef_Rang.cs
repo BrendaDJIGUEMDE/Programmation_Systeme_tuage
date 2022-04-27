@@ -1,6 +1,6 @@
 using System;
 
-namespace SALLE_RESTAURATION.MODEL {
+namespace Master_Chef_Info_console.SALLE_RESTAURATION.MODEL {
 	public class Chef_Rang {
 		public void Distribute_cards() {
 			throw new System.NotImplementedException("Not implemented");
