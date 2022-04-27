@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Master_chef_console/1.0.0": {
+        "runtime": {
+          "Master_chef_console.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Master_chef_console/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
