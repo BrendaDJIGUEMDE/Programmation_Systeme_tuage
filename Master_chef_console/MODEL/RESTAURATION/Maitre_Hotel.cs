@@ -8,5 +8,6 @@ namespace Master_chef_console.MODEL.RESTAURATION
 {
     internal class Maitre_Hotel
     {
+
     }
 }
