@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Brenda DJIGUEMDE\\Source\\Repos\\BrendaDJIGUEMDE\\Programmation_Systeme_tuage\\Master_chef_console\\Master_chef_console.csproj": {}
+    "C:\\Users\\natha\\Documents\\GitHub\\Programmation_Systeme_tuage\\Master_chef_console\\Master_chef_console.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Brenda DJIGUEMDE\\Source\\Repos\\BrendaDJIGUEMDE\\Programmation_Systeme_tuage\\Master_chef_console\\Master_chef_console.csproj": {
+    "C:\\Users\\natha\\Documents\\GitHub\\Programmation_Systeme_tuage\\Master_chef_console\\Master_chef_console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Brenda DJIGUEMDE\\Source\\Repos\\BrendaDJIGUEMDE\\Programmation_Systeme_tuage\\Master_chef_console\\Master_chef_console.csproj",
+        "projectUniqueName": "C:\\Users\\natha\\Documents\\GitHub\\Programmation_Systeme_tuage\\Master_chef_console\\Master_chef_console.csproj",
         "projectName": "Master_chef_console",
-        "projectPath": "C:\\Users\\Brenda DJIGUEMDE\\Source\\Repos\\BrendaDJIGUEMDE\\Programmation_Systeme_tuage\\Master_chef_console\\Master_chef_console.csproj",
-        "packagesPath": "C:\\Users\\Brenda DJIGUEMDE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Brenda DJIGUEMDE\\Source\\Repos\\BrendaDJIGUEMDE\\Programmation_Systeme_tuage\\Master_chef_console\\obj\\",
+        "projectPath": "C:\\Users\\natha\\Documents\\GitHub\\Programmation_Systeme_tuage\\Master_chef_console\\Master_chef_console.csproj",
+        "packagesPath": "C:\\Users\\natha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\natha\\Documents\\GitHub\\Programmation_Systeme_tuage\\Master_chef_console\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Brenda DJIGUEMDE\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\natha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
