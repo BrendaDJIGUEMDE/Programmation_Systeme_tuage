@@ -1,0 +1,3 @@
+C:\Users\natha\Documents\GitHub\Programmation_Systeme_tuage\MasterCuisine\obj\Debug\MasterCuisine.csproj.AssemblyReference.cache
+C:\Users\natha\Documents\GitHub\Programmation_Systeme_tuage\MasterCuisine\obj\Debug\MasterCuisine.csproj.SuggestedBindingRedirects.cache
+C:\Users\natha\Documents\GitHub\Programmation_Systeme_tuage\MasterCuisine\obj\Debug\MasterCuisine.csproj.CoreCompileInputs.cache

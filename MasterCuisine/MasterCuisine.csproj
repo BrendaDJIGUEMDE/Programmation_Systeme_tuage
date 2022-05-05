@@ -55,6 +55,7 @@
     <Compile Include="PassePlat.cs" />
     <Compile Include="PersonnelCuisine.cs" />
     <Compile Include="Plat.cs" />
+    <Compile Include="Plongeur.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sujet.cs" />
