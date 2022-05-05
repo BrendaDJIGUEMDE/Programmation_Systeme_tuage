@@ -13,3 +13,11 @@ C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tua
 C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Master_chef_console\obj\Debug\net6.0\Master_chef_console.pdb
 C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Master_chef_console\obj\Debug\net6.0\Master_chef_console.genruntimeconfig.cache
 C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Master_chef_console\obj\Debug\net6.0\ref\Master_chef_console.dll
+C:\Users\miaff\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Master_chef_console\obj\Debug\net6.0\Master_chef_console.csproj.AssemblyReference.cache
+C:\Users\miaff\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Master_chef_console\obj\Debug\net6.0\Master_chef_console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\miaff\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Master_chef_console\obj\Debug\net6.0\Master_chef_console.AssemblyInfoInputs.cache
+C:\Users\miaff\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Master_chef_console\obj\Debug\net6.0\Master_chef_console.AssemblyInfo.cs
+C:\Users\miaff\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Master_chef_console\obj\Debug\net6.0\Master_chef_console.csproj.CoreCompileInputs.cache
+C:\Users\miaff\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Master_chef_console\obj\Debug\net6.0\Master_chef_console.dll
+C:\Users\miaff\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Master_chef_console\obj\Debug\net6.0\ref\Master_chef_console.dll
+C:\Users\miaff\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Master_chef_console\obj\Debug\net6.0\Master_chef_console.pdb

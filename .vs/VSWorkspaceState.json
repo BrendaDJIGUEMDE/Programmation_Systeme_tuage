@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Master_chef_console",
+    "\\Master_chef_console\\MODEL",
+    "\\Master_chef_console\\MODEL\\RESTAURATION"
   ],
-  "SelectedNode": "\\Master_chef_console.sln",
+  "SelectedNode": "\\Master_chef_console\\MODEL\\RESTAURATION\\CommisSalle.cs",
   "PreviewInSolutionExplorer": false
 }
