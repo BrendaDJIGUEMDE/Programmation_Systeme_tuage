@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Master_chef_console.MODEL.RESTAURATION
 {
-    internal class Carres
+     class Carres
     {
         public Carres(Rangs RangUn, Rangs RangDeux)
         {
@@ -18,6 +18,8 @@ namespace Master_chef_console.MODEL.RESTAURATION
         private Rangs RangUn;
 
         private Rangs RangDeux;
+
+        
 
 
         /// <summary>

@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Master_chef_console.MODEL.RESTAURATION
 {
-    internal class Tables
+    partial class Tables
     {
-        public Tables(int NombreChaises, int NombrePersonnes, int id)
+        public Tables(int NombreChaises,  int id)
         {
             this.NombreChaises = NombreChaises;
-            this.NombrePersonnes = NombrePersonnes;
+           // this.NombrePersonnes = NombrePersonnes;
             this.id = id;
             IsReserved = false;
             HasPain = false;
