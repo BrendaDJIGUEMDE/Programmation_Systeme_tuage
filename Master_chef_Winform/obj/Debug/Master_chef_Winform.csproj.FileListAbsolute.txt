@@ -1,0 +1,11 @@
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Master_chef_Winform\bin\Debug\Master_chef_Winform.exe.config
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Master_chef_Winform\bin\Debug\Master_chef_Winform.exe
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Master_chef_Winform\bin\Debug\Master_chef_Winform.pdb
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Master_chef_Winform\obj\Debug\Master_chef_Winform.csproj.AssemblyReference.cache
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Master_chef_Winform\obj\Debug\Master_chef_Winform.csproj.SuggestedBindingRedirects.cache
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Master_chef_Winform\obj\Debug\Master_chef_Winform.Properties.Resources.resources
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Master_chef_Winform\obj\Debug\Master_chef_Winform.csproj.GenerateResource.cache
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Master_chef_Winform\obj\Debug\Master_chef_Winform.csproj.CoreCompileInputs.cache
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Master_chef_Winform\obj\Debug\Master_chef_Winform.exe
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Master_chef_Winform\obj\Debug\Master_chef_Winform.pdb
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Master_chef_Winform\obj\Debug\Master_chef_Winform.Form1.resources
