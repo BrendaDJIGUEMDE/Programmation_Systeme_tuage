@@ -53,8 +53,8 @@ namespace Master_chef_console.MODEL.RESTAURATION
         public void AmenerSale(Commandes Commande)
         {
             Tables TableAServir = Commande.GetTable();
-            Clients ClientsAServir = TableAServir.GetClients();
-            ClientsAServir.SetServi(true);
+           // Clients ClientsAServir = TableAServir.GetClients();
+            //ClientsAServir.SetServi(true);
             //Timer (gerer par winform)
         }
 

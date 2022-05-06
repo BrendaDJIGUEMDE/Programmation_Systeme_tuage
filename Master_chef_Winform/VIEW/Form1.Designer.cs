@@ -48,6 +48,7 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.richTextBox_messages = new System.Windows.Forms.RichTextBox();
             this.label_messages = new System.Windows.Forms.Label();
+            this.textBoxClient = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -58,6 +59,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.textBoxClient);
             this.panel1.Controls.Add(this.radioButton_reser_no);
             this.panel1.Controls.Add(this.radioButton_reserv_yes);
             this.panel1.Controls.Add(this.label_reservation);
@@ -116,7 +118,6 @@
             this.label_welcome.Size = new System.Drawing.Size(263, 25);
             this.label_welcome.TabIndex = 8;
             this.label_welcome.Text = "Welcome to the Master Chef!!";
-            this.label_welcome.Click += new System.EventHandler(this.label_welcome_Click);
             // 
             // button3
             // 
@@ -153,6 +154,7 @@
             this.button_receive.TabIndex = 5;
             this.button_receive.Text = "Receive";
             this.button_receive.UseVisualStyleBackColor = false;
+            this.button_receive.Click += new System.EventHandler(this.button_receive_Click);
             // 
             // label_nbclient
             // 
@@ -241,7 +243,6 @@
             this.richTextBox_trestau.Size = new System.Drawing.Size(572, 138);
             this.richTextBox_trestau.TabIndex = 1;
             this.richTextBox_trestau.Text = "";
-            this.richTextBox_trestau.TextChanged += new System.EventHandler(this.richTextBox_trestau_TextChanged);
             // 
             // label_salleRestau
             // 
@@ -281,6 +282,13 @@
             this.label_messages.Size = new System.Drawing.Size(59, 16);
             this.label_messages.TabIndex = 1;
             this.label_messages.Text = "Messages";
+            // 
+            // textBoxClient
+            // 
+            this.textBoxClient.Location = new System.Drawing.Point(112, 139);
+            this.textBoxClient.Name = "textBoxClient";
+            this.textBoxClient.Size = new System.Drawing.Size(100, 25);
+            this.textBoxClient.TabIndex = 12;
             // 
             // Form1
             // 
@@ -328,6 +336,7 @@
         private System.Windows.Forms.RichTextBox richTextBox_trestau;
         private System.Windows.Forms.RichTextBox richTextBox_cuisine;
         private System.Windows.Forms.RichTextBox richTextBox_messages;
+        private System.Windows.Forms.TextBox textBoxClient;
     }
 }
 

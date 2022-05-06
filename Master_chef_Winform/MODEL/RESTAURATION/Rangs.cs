@@ -15,7 +15,7 @@ namespace Master_chef_console.MODEL.RESTAURATION
             this.ChefRang = ChefRang;
             this.ListeTables = ListeTables;
             Serveur.SetRang(this);
-            ChefRang.SetRang(this);
+            //ChefRang.SetRang(this);
         }
 
         private Serveur Serveur;

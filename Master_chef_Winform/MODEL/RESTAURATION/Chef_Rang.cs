@@ -2,17 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Master_chef_console.MODEL.RESTAURATION
 {
-    internal class Chef_Rang : Personnel
+    internal class Chef_Rang 
     {
-        public Chef_Rang(String Nom, String Prenom) : base(Nom, Prenom)
-        {
-            Rang = null;
-        }
-
+       
+        /*
         //private String Nom;
 
         //private String Prenom;
@@ -81,7 +79,31 @@ namespace Master_chef_console.MODEL.RESTAURATION
 
 
 
+        }*/
+
+        string MoveToTable = "Bonjour je suis le chef de rang, suivez moi et veuillez prendre place..";
+        string PresenterCarteResto = "Les clients consultent la carte et passent leur commande..";
+        string PasserChefCuisine = "Le chef de rang transmet la commande au chef de lka cuisine..";
+        string DresserTable = "Le chef de rang transmet la commande au chef de la cuisine..";
+        public string getMoveToTable()
+        {
+            return MoveToTable;
+        }
+        public string getpresenterCarteResto()
+        {
+            return PresenterCarteResto;
         }
 
+        public string getPasserChefCuisine()
+        {
+            return PasserChefCuisine;
+        }
+
+        public string getDresserTable()
+        {
+            return DresserTable;
+        }
+       
+        
     }
 }

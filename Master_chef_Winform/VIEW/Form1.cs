@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Master_chef_console.MODEL.RESTAURATION;
@@ -16,10 +17,57 @@ namespace Master_chef_Winform
         public Form1()
         {
             InitializeComponent();
+
+
+            Maitre_Hotel M = new Maitre_Hotel();
+            
+            Salle_Restauration R = new Salle_Restauration();
+            M.AcceuilClient();
+            R.ParcoursTable(M.getNbreDeClient());
+            richTextBox_trestau.Text += "Bienvenue dans notre Restaurant\n";
         }
 
+        Salle_Restauration R = new Salle_Restauration();
+
+        private void button_receive_Click(object sender, EventArgs e)
+        {
+            R.ParcoursTable(Int32.Parse(textBoxClient.Text));
+            richTextBox_trestau.Text += "Le chef de rang vous conduira à la table" + R.getPos()+"\n";
+            textBoxClient.Clear();
+            threadAccueilChefDeRang();
+            Thread.Sleep(4000);
+            threadPresenterCarteResto();
+
+
+
+        }
+        public void threadAccueilChefDeRang()
+        {
+            Chef_Rang S = new Chef_Rang();
+            Thread mainThread = Thread.CurrentThread;
+            Thread thread1 = new Thread(() => S.getMoveToTable());
+            richTextBox_trestau.Text += "Bonjour je suis le chef de rang, suivez moi et veuillez prendre place..\n";
+            richTextBox_trestau.Clear();
+            thread1.Start();
+            Thread.Sleep(4000);
+        }
+
+        public void threadPresenterCarteResto()
+        {
+            Chef_Rang S = new Chef_Rang();
+            Thread mainThread = Thread.CurrentThread;
+            Thread thread1 = new Thread(() => S.getpresenterCarteResto());
+            richTextBox_trestau.Text += "Les clients lisent le menu et passent leurs commandes\n";
+
+            thread1.Start();
+            Thread.Sleep(4000);
+        }
+        public void check()
+        {
+            
+        }
         //////////////////winform/////////////////
-        public String mess = "";
+        /*public String mess = "";
         public String mess_salle = "";
         public String mess_cuis = "";
 
@@ -96,5 +144,12 @@ namespace Master_chef_Winform
         {
 
         }
+
+        private void button_receive_Click(object sender, EventArgs e)
+        {
+
+        }*/
+
+
     }
 }
