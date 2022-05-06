@@ -71,6 +71,7 @@ namespace Master_chef_Winform
         private int id_table;
 
         private int click = 0;
+        private int clickc = 0;
 
         //private Salle_Restauration salle_de_restauration = Salle_Restauration.GetInstance(tables_restau);
 
@@ -191,7 +192,7 @@ namespace Master_chef_Winform
 
         private void comboBox_nbClient_SelectedIndexChanged(object sender, EventArgs e)
         {
-            nb_client = Int32.Parse(comboBox_nbClient.Text);
+            
         }
 
         private void button_receive_Click(object sender, EventArgs e)
@@ -239,50 +240,61 @@ namespace Master_chef_Winform
                 tables_reserv[0] = table4_4;
                 tables_reserv[1] = table9_2;
                 tables_reserv[2] = table6_2;
-                tables_reserv[3] = table6_2;
+                tables_reserv[3] = table7_2;
                 tables_reserv[4] = table1_6;
                 tables_reserv[5] = table2_10;
                 click++;
             }
 
             int id = -1;
+            nb_client = Int32.Parse(comboBox_nbClient.Text);
+           
             int nb = nb_client;
+            int nc;
+            int o;
 
             if (nb > 0 & nb <= 10)
             {
-                int i;
+                richTextBox_messages.Text += "a\n";
                 int min = 32;
-
-                int nc;
-                int o;
-
-                for (i = 0; i < 30; i++)
+                int i;
+                for (i = 0; i < 32; i++)
                 {
+                    richTextBox_messages.Text += "b\n";
+                   
                     nc = tables_restau[i].GetNombreChaises();
                     o = tables_restau[i].Getoccuped();
+                    //richTextBox_messages.Text +=  0 + "\n" ;
+                    richTextBox_messages.Text += i + "\n";
 
                     if (nc >= nb && o == 0)
                     {
+                        richTextBox_messages.Text += "c\n";
                         min = Math.Min(nc, min);
                         if (min == nc)
                         {
+                            richTextBox_messages.Text += "d\n";
                             int j;
                             int reserv = 0;
 
                             for (j = 0; j < 6; j++)
                             {
+                                richTextBox_messages.Text += "e\n";
+
                                 if (tables_reserv[j].GetId() == tables_restau[i].GetId())
                                 {
                                     reserv++;
-
                                 }
                             }
                             if (reserv == 0)
                             {
+                                richTextBox_messages.Text += "f\n";
 
                                 id = tables_restau[i].GetId();
                                 id_table = id;
                                 tables_restau[i].Setoccuped(1);
+                                //richTextBox_messages.Text += tables_restau[i].Getoccuped() + "\n";
+                                richTextBox_messages.Text += id_table + "\n";
 
                             }
                         }
@@ -294,9 +306,13 @@ namespace Master_chef_Winform
                 richTextBox_messages.Text += "The restaurant can receive only 1 to 10 person per group. Please enter a available number\n";
             }
 
-            richTextBox_messages.Text +=  Receive_client(nb_client) + "\n";
-            //richTextBox_messages.Text += tables_restau[9].Getoccuped();
+            richTextBox_messages.Text += id_table + "\n";
+            // richTextBox_messages.Text +=  Receive_client(nb_client) + "\n";
+            // richTextBox_messages.Text += tables_restau[9].Getoccuped();
             //richTextBox_messages.Text += "\n" + click;
+            // richTextBox_messages.Text += clickc + "\n";
+            //clickc++;
+            id_table = -1;
         }
     }
 
