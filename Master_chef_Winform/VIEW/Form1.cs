@@ -246,73 +246,53 @@ namespace Master_chef_Winform
                 click++;
             }
 
-            int id = -1;
             nb_client = Int32.Parse(comboBox_nbClient.Text);
-           
-            int nb = nb_client;
-            int nc;
-            int o;
-
-            if (nb > 0 & nb <= 10)
+            int i;
+            int min = 11;
+            int id_t=-1;
+            for (i =31; i > 0; i--)
             {
-                richTextBox_messages.Text += "a\n";
-                int min = 32;
-                int i;
-                for (i = 0; i < 32; i++)
+               int nc = tables_restau[i].GetNombreChaises();
+               int  o = tables_restau[i].Getoccuped();
+
+                if(nb_client >= nc && o==0)
                 {
-                    richTextBox_messages.Text += "b\n";
-                   
-                    nc = tables_restau[i].GetNombreChaises();
-                    o = tables_restau[i].Getoccuped();
-                    //richTextBox_messages.Text +=  0 + "\n" ;
-                    richTextBox_messages.Text += i + "\n";
+                    int reserv = 0;
 
-                    if (nc >= nb && o == 0)
+                    int j;
+                    for (j = 0; j < 6; j++)
                     {
-                        richTextBox_messages.Text += "c\n";
-                        min = Math.Min(nc, min);
-                        if (min == nc)
+                        
+                        if (tables_reserv[j].GetId() == tables_restau[i].GetId())
                         {
-                            richTextBox_messages.Text += "d\n";
-                            int j;
-                            int reserv = 0;
-
-                            for (j = 0; j < 6; j++)
-                            {
-                                richTextBox_messages.Text += "e\n";
-
-                                if (tables_reserv[j].GetId() == tables_restau[i].GetId())
-                                {
-                                    reserv++;
-                                }
-                            }
-                            if (reserv == 0)
-                            {
-                                richTextBox_messages.Text += "f\n";
-
-                                id = tables_restau[i].GetId();
-                                id_table = id;
-                                tables_restau[i].Setoccuped(1);
-                                //richTextBox_messages.Text += tables_restau[i].Getoccuped() + "\n";
-                                richTextBox_messages.Text += id_table + "\n";
-
-                            }
+                            reserv++;
                         }
                     }
+
+                    if(reserv == 0)
+                    {
+                        min = Math.Min(min, nc);
+                        if (min == nc)
+                        {
+                                id_t = tables_restau[i].GetId();
+                                
+                                tables_restau[i].Setoccuped(1);   
+                        }
+                    }             
                 }
+            }
+
+            if(id_t != -1)
+            {
+                richTextBox_messages.Text += "Vous etes bien enrégistrés à la table"+ id_t+"! attendez quelques instant, le chef de rang vous conduira à votre table\n";
             }
             else
             {
-                richTextBox_messages.Text += "The restaurant can receive only 1 to 10 person per group. Please enter a available number\n";
+                richTextBox_messages.Text += "Désolé, il n'y a pas de table pour vous acuieillir\n";
             }
+            
 
-            richTextBox_messages.Text += id_table + "\n";
-            // richTextBox_messages.Text +=  Receive_client(nb_client) + "\n";
-            // richTextBox_messages.Text += tables_restau[9].Getoccuped();
-            //richTextBox_messages.Text += "\n" + click;
-            // richTextBox_messages.Text += clickc + "\n";
-            //clickc++;
-            id_table = -1;
+        
         }
     }
 
