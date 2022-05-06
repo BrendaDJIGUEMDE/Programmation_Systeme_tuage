@@ -73,15 +73,19 @@ namespace Master_chef_Winform
         private int click = 0;
 
         private Carres caree1;
-        private Carres carre2;
+        private Carres caree2;
+        private Maitre_Hotel maitre_Hotel;
+        private Commis_Restau commis_Restau;
         
 
         private Salle_Restauration salle_de_restauration ;
 
         public void open()
         {
+
+           
             
-            salle_de_restauration = Salle_Restauration.GetInstance(carre1,);
+            salle_de_restauration = Salle_Restauration.GetInstance(caree1,caree2,maitre_Hotel,commis_Restau, tables_restau);
         }
 
 

@@ -1,0 +1,15 @@
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Cuisine\bin\Debug\net6.0\Cuisine.exe
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Cuisine\bin\Debug\net6.0\Cuisine.deps.json
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Cuisine\bin\Debug\net6.0\Cuisine.runtimeconfig.json
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Cuisine\bin\Debug\net6.0\Cuisine.dll
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Cuisine\bin\Debug\net6.0\Cuisine.pdb
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Cuisine\obj\Debug\net6.0\Cuisine.csproj.AssemblyReference.cache
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Cuisine\obj\Debug\net6.0\Cuisine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Cuisine\obj\Debug\net6.0\Cuisine.AssemblyInfoInputs.cache
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Cuisine\obj\Debug\net6.0\Cuisine.AssemblyInfo.cs
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Cuisine\obj\Debug\net6.0\Cuisine.csproj.CoreCompileInputs.cache
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Cuisine\obj\Debug\net6.0\Cuisine.dll
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Cuisine\obj\Debug\net6.0\refint\Cuisine.dll
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Cuisine\obj\Debug\net6.0\Cuisine.pdb
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Cuisine\obj\Debug\net6.0\Cuisine.genruntimeconfig.cache
+C:\Users\Brenda DJIGUEMDE\source\repos\BrendaDJIGUEMDE\Programmation_Systeme_tuage\Cuisine\obj\Debug\net6.0\ref\Cuisine.dll
