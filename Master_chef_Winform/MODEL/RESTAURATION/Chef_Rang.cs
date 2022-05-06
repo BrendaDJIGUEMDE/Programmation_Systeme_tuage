@@ -19,6 +19,8 @@ namespace Master_chef_console.MODEL.RESTAURATION
 
         private Rangs Rang;
 
+        private static Chef_Rang instance = null;
+
         /// <summary>
         /// Le CR place les clients
         /// 
@@ -81,6 +83,18 @@ namespace Master_chef_console.MODEL.RESTAURATION
 
 
 
+        }
+
+        public static Chef_Rang GetInstance(String Nom, String Prenom)
+        {
+            if (Chef_Rang.instance == null)
+            {
+                // Arguments :
+                //(Carre CarreUn, Carre CarreDeux, MaitreHotel MaitreHotel, CommisSalle Commis, PresentoireSalle PresentoireSalle)
+                Chef_Rang.instance = new Chef_Rang( Nom, Prenom);
+
+            }
+            return Chef_Rang.instance;
         }
 
     }

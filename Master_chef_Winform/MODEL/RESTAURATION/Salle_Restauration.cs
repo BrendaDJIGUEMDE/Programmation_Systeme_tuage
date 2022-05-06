@@ -8,13 +8,14 @@ namespace Master_chef_console.MODEL.RESTAURATION
 {
     internal class Salle_Restauration
     {
-        private Salle_Restauration(/*Carres CarreUn, Carres CarreDeux, Maitre_Hotel MaitreHotel, Commis_Restau Commis,*/ Tables[] L_table )
+        private Salle_Restauration(Carres CarreUn, Carres CarreDeux, Maitre_Hotel MaitreHotel, Commis_Restau Commis, Tables[] L_table )
         {
-            //this.CarreUn = CarreUn;
-           // this.CarreDeux = CarreDeux;
-           // this.MaitreHotel = MaitreHotel;
-            //this.Commis = Commis;
-           // this.L_table = L_table;
+            this.CarreUn = CarreUn;
+            this.CarreDeux = CarreDeux;
+            this.MaitreHotel = Maitre_Hotel.GetInstance("djiguemde", "brenda");
+            this.Commis = Commis_Restau.GetInstance("djiguemde", "brenda");
+            this.L_table = L_table;
+            
 
         }
 
@@ -66,29 +67,17 @@ namespace Master_chef_console.MODEL.RESTAURATION
         /// <summary>
         /// Methode d'instanciation unique
         /// </summary>
-        public static Salle_Restauration GetInstance(/*Carres CarreUn, Carres CarreDeux, Maitre_Hotel MaitreHotel, Commis_Restau Commis,*/ Tables[] L_table)
+        public static Salle_Restauration GetInstance(Carres CarreUn, Carres CarreDeux, Maitre_Hotel MaitreHotel, Commis_Restau Commis, Tables[] L_table)
         {
             if (Salle_Restauration.instance == null)
             {
                 // Arguments :
                 //(Carre CarreUn, Carre CarreDeux, MaitreHotel MaitreHotel, CommisSalle Commis, PresentoireSalle PresentoireSalle)
-                Salle_Restauration.instance = new Salle_Restauration(/*CarreUn, CarreDeux, MaitreHotel, Commis,*/ L_table);
+                Salle_Restauration.instance = new Salle_Restauration(CarreUn, CarreDeux, MaitreHotel, Commis, L_table);
 
             }
             return Salle_Restauration.instance;
         }
 
-        public void Service(Boolean Midi_Soir)
-        {
-            //false : MIDI ; true : SOIR
-
-            //Regle l'heure
-
-            //Genere les reservations
-
-            //Genere les Clients OU 
-            //Le programme va faire arriver les client
-
-        }
     }
 }

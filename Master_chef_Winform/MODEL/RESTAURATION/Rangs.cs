@@ -11,6 +11,7 @@ namespace Master_chef_console.MODEL.RESTAURATION
         public Rangs(Serveur Serveur, Chef_Rang ChefRang, Tables[] ListeTables)
         {
             //initialisations par défauts
+            ChefRang = Chef_Rang.GetInstance("djiguemde", "brenda");
             this.Serveur = Serveur;
             this.ChefRang = ChefRang;
             this.ListeTables = ListeTables;
@@ -24,7 +25,7 @@ namespace Master_chef_console.MODEL.RESTAURATION
 
         private Tables[] ListeTables;
 
-        
+       
 
         /// <summary>
         /// Renvoie le Serveur du rang, de type Serveur
@@ -52,6 +53,8 @@ namespace Master_chef_console.MODEL.RESTAURATION
         {
             return this.ListeTables;
         }
+
+
 
 
     }
