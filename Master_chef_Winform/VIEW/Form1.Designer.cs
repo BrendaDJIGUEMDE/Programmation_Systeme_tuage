@@ -153,6 +153,7 @@
             this.button_receive.TabIndex = 5;
             this.button_receive.Text = "Receive";
             this.button_receive.UseVisualStyleBackColor = false;
+            this.button_receive.Click += new System.EventHandler(this.button_receive_Click);
             // 
             // label_nbclient
             // 
@@ -183,6 +184,7 @@
             this.comboBox_nbClient.Name = "comboBox_nbClient";
             this.comboBox_nbClient.Size = new System.Drawing.Size(99, 28);
             this.comboBox_nbClient.TabIndex = 1;
+            this.comboBox_nbClient.SelectedIndexChanged += new System.EventHandler(this.comboBox_nbClient_SelectedIndexChanged);
             // 
             // panel2
             // 
@@ -271,7 +273,7 @@
             this.richTextBox_messages.Size = new System.Drawing.Size(360, 88);
             this.richTextBox_messages.TabIndex = 3;
             this.richTextBox_messages.Text = "";
-            // 
+           
             // label_messages
             // 
             this.label_messages.AutoSize = true;

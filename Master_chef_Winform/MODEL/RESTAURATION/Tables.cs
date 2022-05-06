@@ -16,6 +16,7 @@ namespace Master_chef_console.MODEL.RESTAURATION
             IsReserved = false;
             HasPain = false;
             HasEau = false;
+            occuped = 0;
         }
 
         private Clients Clients;
@@ -34,11 +35,18 @@ namespace Master_chef_console.MODEL.RESTAURATION
 
         private string[] Plats;
 
+        private int occuped;
+
         //public Reservation Reservation = new Reservation (false, true);
 
         public int GetId()
         {
             return this.id;
+        }
+
+        public int Getoccuped()
+        {
+            return this.occuped;
         }
 
         public void SetId(int ID)
@@ -54,6 +62,11 @@ namespace Master_chef_console.MODEL.RESTAURATION
         public void SetClients(Clients Clients)
         {
             this.Clients = Clients;
+        }
+
+        public void Setoccuped( int Occuped)
+        {
+            this.occuped =Occuped;
         }
 
         /// <summary>

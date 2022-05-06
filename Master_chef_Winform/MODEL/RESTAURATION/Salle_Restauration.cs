@@ -8,18 +8,17 @@ namespace Master_chef_console.MODEL.RESTAURATION
 {
     internal class Salle_Restauration
     {
-        private Salle_Restauration(Carres CarreUn, Carres CarreDeux, Maitre_Hotel MaitreHotel, Commis_Restau Commis, Presentoire_restau PresentoireSalle)
+        private Salle_Restauration(/*Carres CarreUn, Carres CarreDeux, Maitre_Hotel MaitreHotel, Commis_Restau Commis,*/ Tables[] L_table )
         {
-            this.CarreUn = CarreUn;
-            this.CarreDeux = CarreDeux;
-            this.MaitreHotel = MaitreHotel;
-            this.Commis = Commis;
-            this.PresentoireSalle = PresentoireSalle;
+            //this.CarreUn = CarreUn;
+           // this.CarreDeux = CarreDeux;
+           // this.MaitreHotel = MaitreHotel;
+            //this.Commis = Commis;
+           // this.L_table = L_table;
+
         }
 
-
         private static Salle_Restauration instance = null;
-
 
         private Carres CarreUn;
 
@@ -29,15 +28,8 @@ namespace Master_chef_console.MODEL.RESTAURATION
 
         private Commis_Restau Commis;
 
-        public DateTime Date;
+        private Tables[] L_table;
 
-
-
-        private Presentoire_restau PresentoireSalle;
-
-        /// <summary>
-        /// Renvoie l'attribut CarreUn de type Carre
-        /// </summary>
 
         public Carres GetCarreUn()
         {
@@ -74,13 +66,13 @@ namespace Master_chef_console.MODEL.RESTAURATION
         /// <summary>
         /// Methode d'instanciation unique
         /// </summary>
-        public static Salle_Restauration GetInstance(Carres CarreUn, Carres CarreDeux, Maitre_Hotel MaitreHotel, Commis_Restau Commis, Presentoire_restau PresentoireSalle)
+        public static Salle_Restauration GetInstance(/*Carres CarreUn, Carres CarreDeux, Maitre_Hotel MaitreHotel, Commis_Restau Commis,*/ Tables[] L_table)
         {
             if (Salle_Restauration.instance == null)
             {
                 // Arguments :
                 //(Carre CarreUn, Carre CarreDeux, MaitreHotel MaitreHotel, CommisSalle Commis, PresentoireSalle PresentoireSalle)
-                Salle_Restauration.instance = new Salle_Restauration(CarreUn, CarreDeux, MaitreHotel, Commis, PresentoireSalle);
+                Salle_Restauration.instance = new Salle_Restauration(/*CarreUn, CarreDeux, MaitreHotel, Commis,*/ L_table);
 
             }
             return Salle_Restauration.instance;

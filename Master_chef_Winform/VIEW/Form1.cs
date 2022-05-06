@@ -19,14 +19,14 @@ namespace Master_chef_Winform
         }
 
         //////////////////winform/////////////////
-        public String mess = "";
+        /*public String mess = "";
         public String mess_salle = "";
-        public String mess_cuis = "";
+        public String mess_cuis = "";*/
 
         public int nb_client;
         public int reserv;
         
-        private Tables Table1_2 = new Tables(2,0);
+        private Tables table1_2 = new Tables(2,0);
         private Tables table2_2 = new Tables(2, 1);
         private Tables table3_2 = new Tables(2, 2);
         private Tables table4_2 = new Tables(2, 3);
@@ -61,30 +61,122 @@ namespace Master_chef_Winform
         private Tables table4_8 = new Tables(8, 28);
         private Tables table5_8 = new Tables(8, 29);
 
-        private Tables table1_10 = new Tables(8, 25);
-        private Tables table2_10 = new Tables(8, 25);
+        private Tables table1_10 = new Tables(10, 30);
+        private Tables table2_10 = new Tables(10, 31);
+
+        private Tables[] tables_restau = new Tables[32];
+
+        private Tables[] tables_reserv = new Tables[32];
+
+        private int id_table;
+
+        private int click = 0;
+
+        //private Salle_Restauration salle_de_restauration = Salle_Restauration.GetInstance(tables_restau);
 
         public void open()
         {
-            
 
+            tables_restau = new Tables[32];
+            tables_reserv = new Tables[32];
+
+            tables_restau[0] = table1_2;
+            tables_restau[1] = table2_2;
+            tables_restau[2] = table3_2;
+            tables_restau[3] = table4_2;
+            tables_restau[4] = table5_2;
+            tables_restau[5] = table6_2;
+            tables_restau[6] = table7_2;
+            tables_restau[7] = table8_2;
+            tables_restau[8] = table9_2;
+            tables_restau[9] = table10_2;
+
+            tables_restau[10] = table1_4;
+            tables_restau[11] = table2_4;
+            tables_restau[12] = table3_4;
+            tables_restau[13] = table4_4;
+            tables_restau[14] = table5_4;
+            tables_restau[15] = table6_4;
+            tables_restau[16] = table7_4;
+            tables_restau[17] = table8_4;
+            tables_restau[18] = table9_4;
+            tables_restau[19] = table10_4;
+
+            tables_restau[20] = table1_6;
+            tables_restau[21] = table2_6;
+            tables_restau[22] = table3_6;
+            tables_restau[23] = table4_6;
+            tables_restau[24] = table5_6;
+
+            tables_restau[25] = table1_8;
+            tables_restau[26] = table2_8;
+            tables_restau[27] = table3_8;
+            tables_restau[28] = table4_8;
+            tables_restau[29] = table5_8;
+
+            tables_restau[30] = table1_10;
+            tables_restau[31] = table2_10;
+
+            tables_reserv[0] = table4_4;
+            tables_reserv[1] = table9_2;
+            tables_reserv[2] = table6_2;
+            tables_reserv[3] = table6_2;
+            tables_reserv[4] = table1_6;
+            tables_reserv[5] = table2_10;
         }
 
 
-        public void Receive_client(int nb)
+        public int Receive_client(int nb)
         {
+            //open();
+            int id=-1;
 
-            if(nb>0 & nb <= 10)
+            if (nb>0 & nb <= 10)
             {
-               // if()
+                int i;
+                int min = 32;
+                
+                int nc;
+                int o;
+                
+                for (i = 0; i < 30; i++ ){
+                    nc = tables_restau[i].GetNombreChaises();
+                    o = tables_restau[i].Getoccuped();
 
+                    if (nc >= nb && o==0)
+                    {
+                        min = Math.Min(nc, min);
+                        if(min == nc)
+                        {
+                            int j;
+                            int reserv = 0;
 
+                            for (j = 0; j < 6; j++)
+                            {
+                                if (tables_reserv[j].GetId() == tables_restau[i].GetId())
+                                {
+                                    reserv++;
+                                    
+                                }
+                            }  
+                            if(reserv == 0)
+                            {
+
+                                id = tables_restau[i].GetId();
+                                id_table = id;
+                                tables_restau[i].Setoccuped(1);
+                                
+                            }
+                        }
+                    }
+                }
             }
             else
             {
-                mess += "The restaurant can receive only 1 to 10 person per group. Please enter a available number";
+                richTextBox_messages.Text += "The restaurant can receive only 1 to 10 person per group. Please enter a available number\n";
             }
 
+            return id_table;
         }
 
         private void richTextBox_trestau_TextChanged(object sender, EventArgs e)
@@ -96,5 +188,118 @@ namespace Master_chef_Winform
         {
 
         }
+
+        private void comboBox_nbClient_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            nb_client = Int32.Parse(comboBox_nbClient.Text);
+        }
+
+        private void button_receive_Click(object sender, EventArgs e)
+        {
+            //richTextBox_messages.Text += "\n" + click;
+            if (click == 0)
+            {
+                tables_restau[0] = table1_2;
+                tables_restau[1] = table2_2;
+                tables_restau[2] = table3_2;
+                tables_restau[3] = table4_2;
+                tables_restau[4] = table5_2;
+                tables_restau[5] = table6_2;
+                tables_restau[6] = table7_2;
+                tables_restau[7] = table8_2;
+                tables_restau[8] = table9_2;
+                tables_restau[9] = table10_2;
+
+                tables_restau[10] = table1_4;
+                tables_restau[11] = table2_4;
+                tables_restau[12] = table3_4;
+                tables_restau[13] = table4_4;
+                tables_restau[14] = table5_4;
+                tables_restau[15] = table6_4;
+                tables_restau[16] = table7_4;
+                tables_restau[17] = table8_4;
+                tables_restau[18] = table9_4;
+                tables_restau[19] = table10_4;
+
+                tables_restau[20] = table1_6;
+                tables_restau[21] = table2_6;
+                tables_restau[22] = table3_6;
+                tables_restau[23] = table4_6;
+                tables_restau[24] = table5_6;
+
+                tables_restau[25] = table1_8;
+                tables_restau[26] = table2_8;
+                tables_restau[27] = table3_8;
+                tables_restau[28] = table4_8;
+                tables_restau[29] = table5_8;
+
+                tables_restau[30] = table1_10;
+                tables_restau[31] = table2_10;
+
+                tables_reserv[0] = table4_4;
+                tables_reserv[1] = table9_2;
+                tables_reserv[2] = table6_2;
+                tables_reserv[3] = table6_2;
+                tables_reserv[4] = table1_6;
+                tables_reserv[5] = table2_10;
+                click++;
+            }
+
+            int id = -1;
+            int nb = nb_client;
+
+            if (nb > 0 & nb <= 10)
+            {
+                int i;
+                int min = 32;
+
+                int nc;
+                int o;
+
+                for (i = 0; i < 30; i++)
+                {
+                    nc = tables_restau[i].GetNombreChaises();
+                    o = tables_restau[i].Getoccuped();
+
+                    if (nc >= nb && o == 0)
+                    {
+                        min = Math.Min(nc, min);
+                        if (min == nc)
+                        {
+                            int j;
+                            int reserv = 0;
+
+                            for (j = 0; j < 6; j++)
+                            {
+                                if (tables_reserv[j].GetId() == tables_restau[i].GetId())
+                                {
+                                    reserv++;
+
+                                }
+                            }
+                            if (reserv == 0)
+                            {
+
+                                id = tables_restau[i].GetId();
+                                id_table = id;
+                                tables_restau[i].Setoccuped(1);
+
+                            }
+                        }
+                    }
+                }
+            }
+            else
+            {
+                richTextBox_messages.Text += "The restaurant can receive only 1 to 10 person per group. Please enter a available number\n";
+            }
+
+            richTextBox_messages.Text +=  Receive_client(nb_client) + "\n";
+            //richTextBox_messages.Text += tables_restau[9].Getoccuped();
+            //richTextBox_messages.Text += "\n" + click;
+        }
     }
+
 }
+
+
